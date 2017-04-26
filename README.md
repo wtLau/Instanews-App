@@ -7,6 +7,11 @@
   -min-width: 600px
   -min-width: 1240px
 
+##Dependencis
+- gulp: "^3.9.1"
+- node.js
+
+
 ## Technology Used
 - HTML5
 - CSS
