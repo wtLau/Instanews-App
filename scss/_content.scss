@@ -1,0 +1,21 @@
+body {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "open_sans", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  background-color: black;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.logo img, h3, select {
+  padding: 1rem;
+}
+footer {
+  color: #c2c2c2;
+  flex: 1;
+}
+
