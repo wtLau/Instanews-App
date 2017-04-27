@@ -69,3 +69,12 @@ footer {
 @media all and (min-width: 1000px) {
 
 }
+$desktop-width: 1000px;
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+   @include desktop {
+      flex: 0 1 50%;
+   }
