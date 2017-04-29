@@ -14,14 +14,17 @@ $(function (){
       url: url,
       method: 'GET',
     }).done(function(data) {
-      $.each(data.results, function( index,value ){
-      newsDisplayed += '<li><img src="'+value.multimedia[1]+'"/>'+  value.url+ value.abstract +'</li>'
-    });
+        var imagesTrue = data.results.filter(function(imagesFilter){
+      return imagesFilter.multimedia.length;
+    }).slice(0,12)
+    $.each(imagesTrue, function(index, value){
+      newsDisplayed += '<li class="listed-news"><img src="' + value.multimedia[4].url + '"/>' + value.abstract + '</li>'
+    })    
     $('.news').append(newsDisplayed);
     }).fail(function(){
         $('.news').append('<li>Sorry theres a problem!</li>');
       }).always(function(){
         $('#loader').remove();
       })
-   })
+  })
 });
