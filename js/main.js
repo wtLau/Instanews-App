@@ -18,7 +18,7 @@ $(function (){
       return imagesFilter.multimedia.length > 0;
     }).slice(0,12)
     $.each(imagesTrue, function(index, value){
-      newsDisplayed += '<li class="listed-news"><img src="' + value.multimedia[4].url + '"/>' + '<div>' + <p>' + value.abstract + '</p> + '</div>'+ '</li>'
+      newsDisplayed += '<li class="listed-news"><a href="' + value.url + '"><img src="' + value.multimedia[4].url + '"/></a><div><p>' + value.abstract + '</p></div></li>'
     })    
     $('.news').append(newsDisplayed);
     }).fail(function(){
