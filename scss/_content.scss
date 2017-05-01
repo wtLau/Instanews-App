@@ -16,11 +16,11 @@ body {
   align-items: center;
   @include desktop{
     flex-flow: row wrap;
-    justify-content: flex-start;
     align-items: initial;
   }
   @include tablet {
-    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: initial;
     }
   }
 
@@ -41,36 +41,42 @@ section {
 .listed-news {
   height: 30rem;
   position: relative;
+  overflow: hidden;
+  &:hover{
+      .abstract {
+        bottom: 0;
+      }
+      }
+  @include tablet {
+    width: 50%;
+    }
   @include desktop {
     width: 25%;
     }
   img {
     height: 30rem;
-    width: 100%;
+    width: 37.5rem;
+    @include tablet {
+      width: 31.25rem;
+    }
+    @include desktop {
+      width: 27rem;
+    }
     }
   div {
     display: flex;
     flex-flow: column-reverse wrap;
     }
-  p {
+}
+.abstract {
+    bottom: -200px;
+    display: inline;
     font-size: 1rem;
     position: absolute;  
     padding:  .8rem .5rem;
     line-height: 1.5rem;
     background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
-    }
-  }
-@include desktop {
-  .listed-news:hover {
-  // height: 100rem;
-  // width: auto;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform:  translate(-50%, -50%);
-  transform: scale(1.5,1.5);
-  transition: all 1s step-in-out 1s;
-  }
+    transition: all 1s ease-in-out .01s;
 }
 #loader {
   height: 3rem;
