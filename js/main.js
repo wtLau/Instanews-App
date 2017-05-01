@@ -15,10 +15,10 @@ $(function (){
       method: 'GET',
     }).done(function(data) {
         var imagesTrue = data.results.filter(function(imagesFilter){
-      return imagesFilter.multimedia.length;
+      return imagesFilter.multimedia.length > 0;
     }).slice(0,12)
     $.each(imagesTrue, function(index, value){
-      newsDisplayed += '<li class="listed-news"><img src="' + value.multimedia[4].url + '"/>' + value.abstract + '</li>'
+      newsDisplayed += '<li class="listed-news"><img src="' + value.multimedia[4].url + '"/>' + '<p>' + value.abstract + '</p>' + '</li>'
     })    
     $('.news').append(newsDisplayed);
     }).fail(function(){
