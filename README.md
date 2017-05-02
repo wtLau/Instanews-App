@@ -6,6 +6,7 @@
   -moilbe
   -min-width: 600px
   -min-width: 1240px
+- allows a user to filter top news story categories via the New York Times API.
 
 ##Dependencis
 - gulp: "^3.9.1"
@@ -16,6 +17,16 @@
 - HTML5
 - CSS
 - CSS3
+- SCSS
+- Gulp
+  -autoprefixer
+  -cssnano
+  -eslint
+  -prettyerror
+  -rename
+  -sass
+  -uglify
+- Node.js
 - javaScript
 - jQuery (http://jquery.com)
 - Visual Studio Code (https://code.visualstudio.com/)
@@ -24,18 +35,16 @@
 - GitHub (https://github.com/)
 - Coality (https://www.npmjs.com/package/coality#product-navigation)
 - Font Squirrel (https://www.fontsquirrel.com/)
-- Flickity (http://flickity.metafizzy.co/)
 - Window resizer v2 (Google Chrome Extension)
-- Super auto refresh (Google Chrome Extension)
 - Toogle Pesticle (Google Chrome Extension)
 
 
 
 ## what I learned
-- My understanding of HTML and CSS syntax are improving as practice and build more often.
-- After learning Flex-Box, styling layout became a lot simpler in CSS.
-- Maintain a healthy version control by consistenly pushing commits to GitHub.
-- Utilizing and implementing third-party scripts such as "Flickity", "Font-Awesome" and "Smooth Scroll" to enhance user experience.
+- Using SCSS to style layout more effciently, and combining minxins, variable, content and fonts into one minified style sheet
+- Retriving specific data via NewYork Times API using ajax 'GET' method
+- Using jQuery.filter to returned 12 url that contains images to its URL on the NYT website
+- Utilizing and implementing plug-ins such as "autoprefixer", "prettyerror", "cssnano" etc.
 
 
 ## Contribute
@@ -47,23 +56,3 @@ Feel free to contribute.
 MIT License
 
 Copyright (c) [2017] [WANG TAT LAU]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-
