@@ -12,15 +12,15 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  @include desktop{
+  @include desktop {
     flex-flow: row wrap;
     align-items: initial;
   }
   @include tablet {
     flex-flow: row wrap;
     align-items: initial;
-    }
   }
+}
 
 .header-logo {
   display: flex;
@@ -42,9 +42,10 @@ body {
 .small-logo {
   height: 5rem;
 }
+
 .logo-size {
   height: 20rem;
-  @include tablet{
+  @include tablet {
     height: 10rem;
     display: flex;
     flex-flow: row wrap;
@@ -71,56 +72,54 @@ body {
   }
   @include desktop {
     width: 25%;
-    &:hover{
+    &:hover {
       .abstract {
         bottom: 0;
-        }
       }
     }
-
+  }
   img {
-    height: 35rem;
-    width: 37.5rem;
+    height: 100%;
     @include tablet {
-      width: 31.25rem;
       position: absolute;
+      transform: translate(-20%, 0%);
     }
     @include desktop {
-      width: 26.5rem;
-      position: absolute;      
+      position: absolute;
     }
-    }
+  }
   div {
     display: flex;
     flex-flow: column-reverse wrap;
-    }
+  }
 }
+
 .abstract {
-    bottom: 0px;
-    display: inline;
-    font-size: 1rem;
-    position: absolute;  
-    padding:  .8rem .5rem;
-    line-height: 1.5rem;
-    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
-    @include tablet {
-      bottom: -200px;
-      transition: all 1s ease-in-out .05s;
-    }
-    @include desktop {
-      bottom: -200px;
-      transition: all 1s ease-in-out .05s;
-    }
+  bottom: 0px;
+  display: inline;
+  font-size: 1rem;
+  position: absolute;
+  padding: .8rem .5rem;
+  line-height: 1.5rem;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+  @include tablet {
+    bottom: -200px;
+    transition: all 1s ease-in-out .05s;
+  }
+  @include desktop {
+    bottom: -200px;
+    transition: all 1s ease-in-out .05s;
+  }
 }
+
 #loader {
   height: 3rem;
   padding: 3rem 10rem;
-  }
+}
 
-  footer p {
-    color: $footer-color;
-    margin: 2rem 0;
-    text-align: center;
-    width: 100%
-  }
-
+footer p {
+  color: $footer-color;
+  margin: 2rem 0;
+  text-align: center;
+  width: 100%
+}
