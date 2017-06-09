@@ -57,12 +57,12 @@ body {
 }
 
 .listed-news {
-  height: 30rem;
+  height: 25rem;
   width: 100%;
   position: relative;
   overflow: hidden;
   @include tablet {
-    height: 30rem;
+    height: 25rem;
     width: 33.333%;
     &:hover {
       .abstract {
@@ -71,6 +71,7 @@ body {
     }
   }
   @include desktop {
+    height: 30rem;
     width: 25%;
     &:hover {
       .abstract {
